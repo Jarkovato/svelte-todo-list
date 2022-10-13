@@ -29,12 +29,6 @@
     tasks = tasks.filter((item) => item != task);
     updateHistory(task, "removed");
   };
-
-  let historyLogs;
-
-  history.subscribe((value) => {
-    historyLogs = value;
-  });
 </script>
 
 <section class="wrapper">
@@ -85,10 +79,6 @@
   {:else}
     <p>No tasks today! Enjoy!</p>
   {/if}
-
-  {#each historyLogs as log, i (i)}
-    <p>{log.task}, {log.status}</p>
-  {/each}
 </section>
 
 <style>

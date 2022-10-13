@@ -20,6 +20,7 @@
     "vite": "^3.1.6"
   },
   "dependencies": {
+    "@macfja/svelte-persistent-store": "^2.2.1",
     "svelte-material-ui": "^6.2.0",
     "svelte-routing": "^1.6.0"
   }
